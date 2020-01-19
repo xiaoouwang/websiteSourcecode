@@ -1,0 +1,39 @@
+202001090087937
+Complete Web Developer
+## ./r.md
+## ./life.md
+## ./cleanAccent.md
+## ./3c.md
+## ./these.md
+## ./francais.md
+## ./github.md
+## ./chinese.md
+## ./vim.md
+## ./vscode.md
+## ./zeroToMastery.md
+## ./language.md
+## ./english.md
+## ./terminal.md
+## ./agenda.md
+## ./articlesEcritsparDesChinois.md
+## ./freeCodeCamp.md
+## ./javascript.md
+## ./asDuFrancais.md
+## ./cultureG.md
+## ./piano.md
+## ./fitness.md
+## ./cv.md
+## ./test.md
+## ./praat
+### ./praat.md
+### ./praatObjects.praat
+### ./praatGraphics.praat
+### ./praatInfo.praat
+### ./praatFileDirectory.praat
+### ./praatMisellaneous.praat
+### ./temp.praat
+### ./vscExtension.md
+### ./app.md
+### ./ressources.md
+### ./projectManagement.md
+

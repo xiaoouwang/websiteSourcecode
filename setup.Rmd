@@ -1,0 +1,6 @@
+```{bash}
+cd public
+git add .
+git commit -m "add mac and hugo related doc"
+git push origin master
+```

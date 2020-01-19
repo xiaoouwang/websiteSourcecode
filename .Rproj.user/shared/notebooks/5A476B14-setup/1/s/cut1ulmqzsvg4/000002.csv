@@ -1,0 +1,11 @@
+"0","cd public
+git add .
+git commit -m ""add""
+git push origin master"
+"1","[master 12e9b76] add
+ 49 files changed, 56 insertions(+), 56 deletions(-)
+ rewrite css/academic.css (60%)
+"
+"2","To https://github.com/xiaoouwang/xiaoouwang.github.io.git
+   f15db85..12e9b76  master -> master
+"

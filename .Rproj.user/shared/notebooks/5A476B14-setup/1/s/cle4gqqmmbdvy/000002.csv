@@ -1,0 +1,22 @@
+"0","cd public
+git add .
+git commit -m ""add mac and hugo related doc""
+git push origin master"
+"1","[master 4e7917a] add mac and hugo related doc
+ 62 files changed, 7004 insertions(+), 925 deletions(-)
+ rewrite index.json (98%)
+ create mode 100644 miscellaneous/0-rbooks/index.html
+ create mode 100644 miscellaneous/1-filemanipulation/index.html
+ create mode 100644 miscellaneous/1-hugo/index.html
+ create mode 100644 miscellaneous/1-mac.RMarkdown
+ create mode 100644 miscellaneous/1-mac/index.html
+ create mode 100644 miscellaneous/2-3variablergraphs/index.html
+ create mode 100644 miscellaneous/index.html
+ create mode 100644 miscellaneous/index.xml
+ create mode 100644 templatedirectory/index.html
+ create mode 100644 templatedirectory/index.xml
+ rewrite webscraping/index.xml (89%)
+"
+"2","To https://github.com/xiaoouwang/xiaoouwang.github.io.git
+   b6b168d..4e7917a  master -> master
+"
