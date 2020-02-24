@@ -4,34 +4,58 @@
 #   The weight parameter defines the order that the links will appear in.
 
 [[main]]
-  name = "AboutMe"
-  url = "/home"
+  name = "Me"
+  url = "#about"
+  weight = 10
+
+
+# [[main]]
+#   name = "WebScraping"
+#   url = "/webscraping"
+#   weight = 2
+
+[[main]]
+  name = "Projects"
+  url = "#projects"
   weight = 1
 
 [[main]]
-  name = "WebScraping"
-  url = "/webscraping"
-  weight = 2
-
-[[main]]
-  name = "R"
-  url = "/r"
-  weight = 3
-
-[[main]]
-   name = "Miscellaneous"
-   url = "/miscellaneous"
-   weight = 4
-
-[[main]]
-   name = "Blog"
-   url = "/post"
-   weight = 5
+ name = "Blog"
+ url = "#posts"
+ weight = 5
 
 # [[main]]
-#   name = "Projects"
-#   url = "#project"
+#   name = "Tags"
+#   url = "#tags"
+#   weight = 10
+
+[[main]]
+  name = "Skills"
+  url = "#skills"
+  weight = 15
+
+
+# [[main]]
+#   name = "R"
+#   url = "/r"
+#   weight = 20
+
+# [[main]]
+#   name = "Python"
+#   url = "/python"
 #   weight = 30
+
+# [[python]]
+#   name = "Python"
+#   url = "/python"
+#   identifier = "python"
+
+# [[main]]
+#    name = "Miscellaneous"
+#    url = "/miscellaneous"
+#    weight = 40
+
+
 
 # [[main]]
 #   name = "Publications"
@@ -41,6 +65,11 @@
 #   name = "Overview"
 #   weight = 1
 #   url = "/courses/"
+
+[[miscellaneous]]
+  name = "Multilinguistic problems in NLP"
+  weight = 3
+  identifier = "multilinguisme"
 
 # [[courses]]
 #   name = "Blog"

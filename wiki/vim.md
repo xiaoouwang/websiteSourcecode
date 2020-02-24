@@ -1,3 +1,19 @@
+## vim and vsc related
+
+I have been a keen fan of vim since 2013, but I've always found vim's configurating process a "pain in the ass". Nowadays I use vsc and the [vscodevim](https://github.com/VSCodeVim/Vim) plugin and I'm quite pleased with this compromise.
+
+Below are the common vim things simulated by this plugin that I use in a daily basis.
+[searchInVim](https://www.linux.com/tutorials/vim-tips-basics-search-and-replace/)
+
+* replace in a range
+:8,10s/search/replace/g
+* replace in the whole file
+:%s/search/replace
+* search the word under cursor
+\*
+
+
+
 ## Make the change repeatable
 test<F2>
 

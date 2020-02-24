@@ -11,3 +11,6 @@ mermeid doesn't work in pdf coz it's html widget
 
 ## no more scientific notation
 options(scipen=999)
+
+
+b

@@ -1,0 +1,1 @@
+{ "pasteImage.path": "../static/img/${currentFileNameWithoutExt}/" }

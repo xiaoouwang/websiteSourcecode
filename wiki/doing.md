@@ -1,4 +1,6 @@
 # brochureTal
+## vsc
+	build a markdown highlighter
 ## Anki
 	import first cards
 ## efficiency

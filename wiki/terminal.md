@@ -1,6 +1,6 @@
 ## voice
 say -v Whisper "Now I am whispering"
-say -v Anna 'Guten Tag!'
+say -v *Anna* 'Guten Tag!'
 
 ## Find and rename
 ## Duplicate lines

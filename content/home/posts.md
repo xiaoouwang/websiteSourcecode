@@ -3,12 +3,12 @@
 # This section displays recent blog posts from `content/post/`.
 
 widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
-headless = false  # This file represents a page section.
+headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 3  # Order that this section will appear.
+weight = 5  # Order that this section will appear.
 
 title = "Recent Articles"
-subtitle = "take a glimpse()"
+subtitle = "glimpse()"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
@@ -36,7 +36,7 @@ subtitle = "take a glimpse()"
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view = 1
+  view = 3
 
 [design.background]
   # Apply a background color, gradient, or image.

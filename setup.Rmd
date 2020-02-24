@@ -1,6 +1,16 @@
 ```{bash}
 cd public
 git add .
-git commit -m "add mac and hugo related doc"
+git commit -m "add web scraping 1"
+git push origin master
+```
+
+
+
+## source code 
+
+```{bash}
+git add .
+git commit -m "to becca"
 git push origin master
 ```
