@@ -28,7 +28,7 @@ role:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'
+  link: 'mailto:xiaoouwangfrance@gmail.com'
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=8LthGPoAAAAJ&hl=en

@@ -1,16 +1,16 @@
 ---
-title: Start Web Scraping (2/10)
+title: Start Web Scraping (2/10) | Advanced Parsing
 subtitle: Advanced parsing
 summary: PARSING & DOM TRAVERSAL & LAMBDA FUNCTION
 authors:
 - Xiaoou WANG
-tags: []
-categories: []
+tags: ["Web Scraping in 10 lessons","Python"]
+categories: ["Web Scraping","Python"]
 date: "2020-01-04"
 # lastMod: "2020-01-02"
 featured: false
 draft: false
-markup: blackfriday
+# markup: blackfriday
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
@@ -25,8 +25,9 @@ image:
 #   Otherwise, set `projects = []`.
 projects: ["Python"]
 ---
-{{% toc %}}
-## find all the span tags with the following attributes (class equal to green) = person names
+<!-- {{% toc %}} -->
+
+## Find all the span tags with the following attributes (class equal to green) = person names
 
 
 ```python
@@ -39,7 +40,7 @@ bs = BeautifulSoup(html, "html.parser")
 
 
 ```python
-# all the names are in span tag of class green, in order of appereance in the text
+# all the names are in span tag of class green, in order of appearance in the text
 # bs.find_all(tagName, tagAttributes)
 # attributes are dictionary
 nameList = bs.findAll('span', {'class': 'green'})
@@ -410,7 +411,7 @@ bs.find_all('', {'id':'text'})
 
 
 
-## difference between children and descendents
+## Difference between children and descendants
 
 
 ```python
@@ -484,7 +485,7 @@ for child in bs.find('table',{'id':'giftList'}).children:
     <tr class="gift" id="gift5"><td>
     Mystery Box
     </td><td>
-    If you love suprises, this mystery box is for you! Do not place on light-colored surfaces. May cause oil staining. <span class="excitingNote">Keep your friends guessing!</span>
+    If you love surprises, this mystery box is for you! Do not place on light-colored surfaces. May cause oil staining. <span class="excitingNote">Keep your friends guessing!</span>
     </td><td>
     $1.50
     </td><td>
@@ -494,7 +495,7 @@ for child in bs.find('table',{'id':'giftList'}).children:
 
 
 
-## pay attention to NEXT siblings
+## Pay attention to NEXT siblings
 
 
 ```python
@@ -555,7 +556,7 @@ for sibling in bs.find('table', {'id':'giftList'}).tr.next_siblings:
     <tr class="gift" id="gift5"><td>
     Mystery Box
     </td><td>
-    If you love suprises, this mystery box is for you! Do not place on light-colored surfaces. May cause oil staining. <span class="excitingNote">Keep your friends guessing!</span>
+    If you love surprises, this mystery box is for you! Do not place on light-colored surfaces. May cause oil staining. <span class="excitingNote">Keep your friends guessing!</span>
     </td><td>
     $1.50
     </td><td>
@@ -565,7 +566,7 @@ for sibling in bs.find('table', {'id':'giftList'}).tr.next_siblings:
 
 
 
-## find all the image and find it's parent (td in this case)
+## Find all the image and find it's parent (td in this case)
 
 
 ```python
@@ -612,7 +613,7 @@ type(images)
 
 
 
-## use lambda function to implement some nice functions
+## Use lambda function to implement some nice functions
 
 
 ```python

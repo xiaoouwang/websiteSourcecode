@@ -3,10 +3,6 @@
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
-[[main]]
-  name = "Me"
-  url = "#about"
-  weight = 10
 
 
 # [[main]]
@@ -14,9 +10,13 @@
 #   url = "/webscraping"
 #   weight = 2
 
+# [[main]]
+#   name = "Projects"
+#   url = "#projects"
+#   weight = 3
 [[main]]
   name = "Projects"
-  url = "#projects"
+  url = "#tags"
   weight = 1
 
 [[main]]
@@ -24,15 +24,17 @@
  url = "#posts"
  weight = 5
 
-# [[main]]
-#   name = "Tags"
-#   url = "#tags"
-#   weight = 10
 
 [[main]]
-  name = "Skills"
-  url = "#skills"
-  weight = 15
+  name = "Contact"
+  url = "#about"
+  weight = 10
+
+
+# [[main]]
+#   name = "Skills"
+#   url = "#skills"
+#   weight = 15
 
 
 # [[main]]
@@ -66,10 +68,10 @@
 #   weight = 1
 #   url = "/courses/"
 
-[[miscellaneous]]
-  name = "Multilinguistic problems in NLP"
-  weight = 3
-  identifier = "multilinguisme"
+# [[miscellaneous]]
+#   name = "Multilinguistic problems in NLP"
+#   weight = 3
+#   identifier = "multilinguisme"
 
 # [[courses]]
 #   name = "Blog"
@@ -83,16 +85,22 @@
   weight = 1
 
 [[main_right]]
-  name = "<i class=\"fas fa-comments\" style=\"color: rgb(123, 22, 255); font-size: 1rem; line-height: 1.25\"></i>"
+  name = "<i class=\"fab fa-github-alt\" style=\"color: #333; font-size: 1rem; line-height: 1.25\"></i>"
   post = ""
-  url = "https://spectrum.chat/data-science?tab=posts"
-  weight = 3
+  url = "https://github.com/xiaoouwang"
+  weight = 2
+
+# [[main_right]]
+#   name = "<i class=\"fas fa-envelope\" style=\"color: rgb(123, 22, 255); font-size: 1rem; line-height: 1.25\"></i>"
+#   post = ""
+#   url = "mailto:xiaoouwangfrance@gmail.com"
+#   weight = 1
 
 [[main_right]]
   name = "<i class=\"fab fa-twitter\" style=\"color: #55acee; font-size: 1rem; line-height: 1.25\"></i>"
   post = ""
   url = "https://twitter.com/xiaoouwangfr"
-  weight = 2
+  weight = 3
 
 # [[main]]
 #   name = "Tableaux"

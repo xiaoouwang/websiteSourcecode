@@ -1,1 +1,1 @@
-{ "pasteImage.path": "../static/img/${currentFileNameWithoutExt}/" }
+{ "pasteImage.path": "./img/" }

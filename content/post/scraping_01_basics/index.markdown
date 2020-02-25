@@ -1,16 +1,16 @@
 ---
-title: Start Web Scraping (1/10)
+title: Start Web Scraping (1/10) | Basics
 subtitle: Learn the basics of web scraping
 summary: EXPLORING THE BASICS
 authors:
 - Xiaoou WANG
-tags: ["WebScraping","Python"]
-categories: []
+tags: ["Web Scraping in 10 lessons","Python"]
+categories: ["Web Scraping","Python"]
 date: "2020-01-01"
 # lastMod: "2019-09-05T00:00:00Z"
 featured: false
 draft: false
-# markup: blackfriday
+markup: blackfriday
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -30,7 +30,7 @@ projects: ["Python"]
 {{% toc %}}
 
 
-## basic approach using urlopen from request
+## Basic approach using urlopen from request
 
 
 ```python
@@ -99,7 +99,7 @@ print(bs.body.h1)
 ## <h1>An Interesting Title</h1>
 ```
 
-## handle webpage adress error
+## Handle webpage address error
 
 
 
@@ -123,7 +123,7 @@ else:
 ## HTTP Error 404: Not Found
 ```
 
-## write a function to handle url error problems (very important to group usual patterns)
+## Write a function to handle url error problems (very important to group usual patterns)
 
 
 

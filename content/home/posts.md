@@ -7,7 +7,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 5  # Order that this section will appear.
 
-title = "Recent Articles"
+title = "Articles"
 subtitle = "glimpse()"
 
 [content]
@@ -36,7 +36,7 @@ subtitle = "glimpse()"
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view = 3
+  view = 1
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -48,8 +48,8 @@ subtitle = "glimpse()"
   # color = "navy"
 
   # Background gradient.
-  # gradient_start = "DeepSkyBlue"
-  # gradient_end = "SkyBlue"
+  # gradient_start = "#bdc3c7"
+  # gradient_end = "#86919a"
 
   # Background image.
   # image = "background.jpg"  # Name of image in `static/img/`.

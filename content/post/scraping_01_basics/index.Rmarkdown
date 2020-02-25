@@ -1,11 +1,11 @@
 ---
-title: Start Web Scraping (1/10)
+title: Start Web Scraping (1/10) | Basics
 subtitle: Learn the basics of web scraping
 summary: EXPLORING THE BASICS
 authors:
 - Xiaoou WANG
-tags: ["WebScraping","Python"]
-categories: []
+tags: ["Web Scraping in 10 lessons","Python"]
+categories: ["Web Scraping","Python"]
 date: "2020-01-01"
 # lastMod: "2019-09-05T00:00:00Z"
 featured: false
@@ -30,7 +30,7 @@ projects: ["Python"]
 {{% toc %}}
 
 
-## basic approach using urlopen from request
+## Basic approach using urlopen from request
 
 ```{python}
 from urllib.request import urlopen
@@ -63,11 +63,11 @@ print(bs.body.h1)
 # lxml parser (replace html.parser with lxml) has some advantages over html.parser in that it is generally better at parsing “messy” or malformed HTML code. It is forgiving and fixes problems like unclosed tags, tags that are improperly nested, and missing head or body tags. It is also somewhat faster than html.parser, although speed is not necessarily an advantage in web scraping, given that the speed of the network itself will almost always be your largest bottleneck.  P.S. html5lib is also possible
 ```
 
-## handle webpage adress error
+## Handle webpage address error
 
 
 ```{python}
-# handle erros This HTTP error may be “404 Page Not Found,” “500 Internal Server Error,” and so forth
+# handle errors This HTTP error may be “404 Page Not Found,” “500 Internal Server Error,” and so forth
 from urllib.error import HTTPError
 from urllib.error import URLError
 
@@ -82,7 +82,7 @@ else:
     print(html.read())
 ```
 
-## write a function to handle url error problems (very important to group usual patterns)
+## Write a function to handle url error problems (very important to group usual patterns)
 
 
 ```{python}
