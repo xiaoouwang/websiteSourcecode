@@ -1,0 +1,119 @@
+---
+title: "Scrape lemonde articles for testing nlp libraries (2)"
+date: "2020-04-08"
+summary:
+subtitle:
+authors:
+- Xiaoou WANG
+tags: ["Enrichissement Corpus"]
+# categories: [""]
+# lastMod: "2019-09-05T00:00:00Z"
+featured: false
+draft: false
+markup: blackfriday
+toc: true
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+image:
+  caption: ""
+  focal_point: ""
+
+---
+
+
+
+<!-- {{< figure library="true" src="enjoy.png" lightbox="true" >}} -->
+
+{{% toc %}}
+
+[Part 1 here](https://xiaoouwang.github.io/post/scraping_04_enrichi/)
+
+
+
+## 1. Why
+
+Construct a corpus for testing morpho-syntactic parsers used in Treetagger, Stanford and spacy.
+
+## 2. Last time
+
+In Part I we have already the links classfied by economie, sport and culture.
+
+## 3. Scrape a single url
+
+If we examine the page of each article link of lemonde, the structure is fairly simple (which is not the case of le figaro):
+
+* the article is in a article dev
+* the article title is in a h1 element
+* the article body is composed of first-level h2 and p elements
+
+So the most straightforward way to extract the content is to:
+
+* find the h1 element
+* find all the p and h2 elements with recursive = False (only search for first level elements)
+
+Hence we define a function here:
+
+
+```python
+def getSinglePage(url):
+    try:
+        html = urlopen(url)
+    except HTTPError as e:
+        print("text url not valid")
+    soup = BeautifulSoup(html, "html.parser")
+    with open('html.html','w') as f:
+        f.write(soup.prettify())
+    text_title = soup.find('h1')
+    text_body = soup.article.find_all(["p", "h2"], recursive=False)
+    return (text_title, text_body)
+```
+
+## 4. Scrape n articles under a certain theme
+
+Here we define a function with 3 parameters:
+
+* numberOfArticles
+* links dictionary of form {theme:link list}
+* theme
+
+Also we use get_text() method to strip all the tags in p and h2 elements, which gives us the texts embedded in these elements.
+
+We add `##` before the title of each article to keep track of this information.
+
+Finally, we create a lemonde folder under which all the scraped texts are saved formated as `theme` + `number`, i.e. `economie1.txt`, `economie2.txt` etc.
+
+
+```python
+def scrapeArticles(numberOfArticles, dict_links, theme):
+    for i in range(1, numberOfArticles+1):
+        if numberOfArticles <= len(dict_links[theme]):
+            singlePage = getSinglePage(dict_links[theme][i])
+            with open(('lemonde/'+ theme + str(i) + '.txt'), 'w') as f:
+                f.write("## " + singlePage[0].get_text()+"\n"*2)
+                for line in singlePage[1]:
+                    f.write(line.get_text()+"\n"*2)
+        else:
+            print("reduce number of articles")
+```
+
+![](img/2020-04-07-21-32-03.png)
+
+
+## 5. How many words ?
+
+The number of words is need to determine the number of forum posts. A little helper function is defined here:
+
+
+```python
+counter = 0
+fileList = os.listdir('lemonde')
+for f in fileList:
+    with open('lemonde/'+f, 'r') as f:
+        text = f.read()
+        words = text.split()
+        length = len([w for w in words if w != "##"])
+        counter += length
+
+print(counter)
+# 165674 words
+```

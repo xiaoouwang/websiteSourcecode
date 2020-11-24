@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "9cbff8b9ae85928e",
+    "type": "split",
+    "children": [
+      {
+        "id": "b328ed4eddc1e654",
+        "type": "leaf",
+        "active": true,
+        "pinned": true,
+        "state": {
+          "type": "graph",
+          "state": {},
+          "pinned": true
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "feab18a63fdaeb76",
+    "type": "split",
+    "children": [
+      {
+        "id": "f087294510c5cc7b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e9b06af12b820d40",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "7f3bbb3d7d61f497",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": ""
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 276
+  },
+  "right": {
+    "id": "28edad5d8bc878d4",
+    "type": "split",
+    "children": [
+      {
+        "id": "fd27b5c7d4b8e247",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11e2328544bd4df9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {}
+            }
+          },
+          {
+            "id": "f23ecc3ddab0139b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {}
+            }
+          },
+          {
+            "id": "d245f39eb1d1f973",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "algo.md",
+    "agenda.md",
+    "2phonetiqueNasalite.md",
+    "1phonologiePhonetique.md",
+    "languageRessources.md",
+    "amelot.md",
+    "articlesEcritsparDesChinois.md",
+    "asDuFrancais.md",
+    "answers.md",
+    "basset.md"
+  ]
+}
